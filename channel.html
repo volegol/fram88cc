@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<style type="text/css">
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.player-poster[data-poster].clickable {
+    background-size: contain;
+    background-image: url("//");
+}
+</style>
+
+<meta charset="UTF-8">
+
+<style>
+.video-js {
+position: absolute;
+    height: 100%!important;
+    z-index: 99;
+    right: 0;
+    left: 0;
+
+}
+.player_1-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 0%;
+}
+.btn {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #128deb;
+    border: none;
+    -webkit-border-radius: 0.1875rem;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    margin-top: 30px;position: fixed;z-index: 9;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    line-height: 1;
+    padding: 10px 14px;
+    transition: .15s ease-in-out;
+    transition-property: background-color,color;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    word-spacing: normal;
+}
+.btn {
+    font-size: 14px;
+}
+.uyarikutu {
+    width: 92%;
+    max-width: 210px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+}
+#uyarikapat {
+    z-index: 99999;
+}
+.uyarikutu .uyaribaslik {
+    color: #fff;
+    border-radius: 10px;
+    background: rgba(3, 0, 163, 1);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 0.5rem 5px;
+    margin: 0.5rem 0;
+}
+.uyarikutu .aciklaaciklama {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+.uyarikutu .aciklaaciklama amp-img {
+    margin-bottom: 0.2rem;
+}
+.uyarikutu .uyariaciklama {
+    color: #555;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 0.5rem;
+}
+.uyarikutu .uyaributon {
+    text-align: center;
+    margin-top: 0;
+}
+.uyarikutu .uyaributon button {
+    border: none;
+    background: rgba(3, 0, 163, 1);
+    color: #fff;
+    padding: 0.6rem 15px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.uyarikutu .uyaributon button a {
+    color: #000;
+}
+#uyarikutu {
+    background: rgba(59, 59, 59, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100000000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+</style>
+
+ <script type="text/javascript">
+                  function kapat(){
+                  document.getElementById("uyarikutu").style.display = "none";
+                  }
+                  </script>
+
+
+
+<!--<input onclick="location.reload()" style="cursor: pointer; position: absolute; left: 20px; z-index: 8; top: 0;" type="button" value="YENILE" />-->
+<marquee bgcolor="black" onmouseover="this.stop()" onmouseout="this.start()" direction="horizontal" scrollamount="6"
+scrolldelay="5" loop="9999" style="cursor:pointer;position: absolute;;top:0px;z-index:8;"> <a href="/" target="_blank" style="color:white"><font size="5"Reklam Alani</font></a></marquee>
+
+
+<!-- yayin kodu -->
+<div id="channel-detail"></div>
+<div id="player"></div>
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/amplerbunda/raparodor/clappr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+<style>
+.media-control-layer[data-controls] button.media-control-button[data-hd-indicator] {
+    display: block !important;
+    fill: rgb(173, 216, 230) !important;
+}
+.media-control[data-media-control] .media-control-background[data-background] {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    background: transparent;
+    background: transparent;
+    -webkit-transition: opacity .6s ease-out;
+    -moz-transition: opacity .6s ease-out;
+    transition: opacity .6s ease-out;
+}
+</style>
+<script>
+var url_string = window.location.href;
+var url = new URL(url_string);
+var cid = url.searchParams.get("id");
+var ctitle = url.searchParams.get("title");
+var adsSrc = Array("https://jusjustjustss13.lunamorris71.workers.dev/https://fram88c.pages.dev/kralbet.mp4");
+var adsLink = Array("https://cutt.ly/3w5ycZzu");
+var baseurl = "https://wonderful2.tyquancash49.workers.dev/";
+var kanalurl = {
+    1: "yayinstar.m3u8",
+    2: "yayinb2.m3u8",
+    3: "yayinb3.m3u8",
+    4: "yayinb4.m3u8",
+    5: "yayinb5.m3u8",
+    6: "yayinbm1.m3u8",
+    7: "yayinbm2.m3u8",
+    8: "yayinss.m3u8",
+    9: "yayinss2.m3u8",
+    10: "yayinssp2.m3u8",
+    11: "yayint1.m3u8",
+    12: "yayint2.m3u8",
+    13: "yayint3.m3u8",
+    14: "yayinsmarts.m3u8",
+    15: "yayinsms2.m3u8",
+    16: "yayintrtspor.m3u8",
+    17: "yayintrtspor2.m3u8",
+    18: "yayinas.m3u8",
+    19: "yayinatv.m3u8",
+    20: "yayintv8.m3u8",
+    21: "yayintv85.m3u8",
+    22: "yayinnbatv.m3u8",
+    23: "yayinex1.m3u8",
+    24: "yayinex2.m3u8",
+    25: "yayinex3.m3u8",
+    26: "yayinex4.m3u8",
+    27: "yayinex5.m3u8",
+    28: "yayinex6.m3u8",
+    29: "yayinex7.m3u8",
+    30: "yayinex8.m3u8"
+}
+var adsg = cid + ".m3u8";
+var sexurl = baseurl + adsg;
+var rands = Math.floor(Math.random() * adsSrc.length);
+
+
+window.config = {
+    adv: {
+        enabled: 0,
+        link: adsLink[rands],
+        parentId: "div#player",
+        width: '100%',
+        height: '300px',
+        skipOffset: "7",
+        source: adsSrc[rands]
+    },
+    match: {
+        parentId: "div#player",
+        position: "top-right",
+        source: sexurl,
+        mimeType: "application/x-mpegURL",
+  		mediacontrol: {seekbar: "#181929"},
+  		plugins: [ChromecastPlugin],
+        poster: "",
+        watermark: "",
+        watermarkLink: "",
+        width: '100%',
+        height: '300px'
+    }
+}
+</script>
+
+
+
+<div style="display:none"> <script id="_waudvq">var _wau = _wau || []; _wau.push(["dynamic", "hnxm5b9piu", "dvq", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script> </div>
